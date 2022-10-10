@@ -1,18 +1,17 @@
 import { BoxWrapper } from "./box.style";
-import { ContainerWrapper } from "../container.style"
+import ProgressBox from "../progressBox";
 
 type BoxProps = {
-    value: String;
     description: String
+    bgColor: string
+    completed: string
 }
 
 function Box(props: BoxProps) {
     return (
         <BoxWrapper>
-            <ContainerWrapper>
-                <h2>{props.description}</h2>
-                <h1>{props.value}</h1>
-            </ContainerWrapper>
+            <h2>{props.description}</h2>
+            <ProgressBox bgColor={props.bgColor} completed={props.completed}/>
         </BoxWrapper>
     )
 }

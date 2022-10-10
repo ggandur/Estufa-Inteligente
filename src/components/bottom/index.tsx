@@ -1,17 +1,24 @@
 import { BottomWrapper } from "./bottom.style";
-import ProgressBox from "../bottom/progressBox"
 import Box from "./box";
 
 type BottomProps = {
-    luminosityValue: String
-    humidityValue: String
+    luminosityValue: string
+    humidityValue: string
 }
 
 function Bottom(props: BottomProps) {
     return (
         <BottomWrapper>
-            <Box description={"Luminosidade"} value={props.luminosityValue} />
-            <Box description={"Humidade"} value={props.humidityValue} />
+            <Box
+                description={"Luminosidade"}
+                bgColor={"rgba(251, 255, 0, 0.9)"}
+                completed={props.luminosityValue}
+            />
+            <Box
+                description={"Humidade"}
+                bgColor={"rgba(0, 68, 255, 0.9)"}
+                completed={props.humidityValue}
+            />
         </BottomWrapper>
     )
 }
