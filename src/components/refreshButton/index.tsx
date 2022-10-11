@@ -1,13 +1,16 @@
 import { RefreshButtonWrapper } from "./refreshButton.style";
+import { getData } from "../functions/getData"
+import DataType from "../../interfaces/dataType";
+import { SetStateAction } from "react";
 
 type RefreshButtonProps = {
-    getData: (event: any) => void
+    setData: React.Dispatch<SetStateAction<{} | DataType | undefined>>
 }
 
 function RefreshButton(props: RefreshButtonProps) {
     return (
         <RefreshButtonWrapper
-            onClick={props.getData}
+            onClick={() => getData(props.setData)}
         >
             <img
                 src="src/assets/refresh.png"
