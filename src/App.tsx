@@ -7,8 +7,8 @@ import { getData } from './components/functions/getData'
 
 function App() {
 
-  const [data, setData] = useState<DataType | {}>()
-  const shouldRender = data
+  const [data, setData] = useState<DataType>()
+  const shouldRender = Boolean(data)
 
   return (
     shouldRender
