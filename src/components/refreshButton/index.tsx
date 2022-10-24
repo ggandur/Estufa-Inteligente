@@ -20,5 +20,6 @@ function RefreshButton(props: RefreshButtonProps) {
         </RefreshButtonWrapper>
     )
 }
+// Já esta componentizado
 
 export default RefreshButton

@@ -7,13 +7,13 @@ import { getData } from './components/functions/getData'
 
 function App() {
 
-  const [data, setData] = useState<DataType | {}>()
-  const shouldRender = data
+  const [data, setData] = useState<DataType>()
+  const shouldRender = !!data
 
   return (
     shouldRender
       ? <HomePage
-        data={data as DataType}
+        data={data}
         setData={setData}
       />
       : <><h1>Bem Vindo</h1>
