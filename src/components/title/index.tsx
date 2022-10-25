@@ -2,11 +2,10 @@ import { TitleWrapper } from "./title.style";
 import { IconWrapper } from "./icon.style"
 import RefreshButton from "../refreshButton";
 import DataType from "../../interfaces/dataType";
-import { SetStateAction } from "react";
 
 type TitleProps = {
     title: String
-    setData: React.Dispatch<SetStateAction<{} | DataType | undefined>>
+    setData: (data: DataType) => void
 }
 
 function Title(props: TitleProps) {

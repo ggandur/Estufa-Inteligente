@@ -1,10 +1,9 @@
 import { RefreshButtonWrapper } from "./refreshButton.style";
 import { getData } from "../functions/getData"
 import DataType from "../../interfaces/dataType";
-import { SetStateAction } from "react";
 
 type RefreshButtonProps = {
-    setData: React.Dispatch<SetStateAction<{} | DataType | undefined>>
+    setData: (data: DataType) => void
 }
 
 function RefreshButton(props: RefreshButtonProps) {
