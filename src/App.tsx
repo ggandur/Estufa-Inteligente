@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, Fragment } from 'react'
 import './App.css'
 import HomePage from "./components/homePage"
 import DataType from './interfaces/dataType'
@@ -15,11 +15,12 @@ function App() {
         data={data}
         setData={setData}
       />
-      : <><h1>Bem Vindo</h1>
+      :
+      <Fragment>
+        <h1>Bem Vindo</h1>
         <RefreshButton
-          setData={setData}
-        />
-      </>
+          setData={setData} />
+      </Fragment>
   )
 }
 
