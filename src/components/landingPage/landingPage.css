@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Manrope', sans-serif;
+}
+
+body {
+  background: radial-gradient(circle, rgb(3, 20, 27) 0%, rgb(0, 255, 76) 170%);
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+  color: aliceblue;
+}
+
+a:link {
+  text-decoration: none;
+  font-weight: 600;
+  color: aliceblue;
+}
+
+a:visited {
+  color: aliceblue;
+}
+
+.homePage {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logoDisplay {
+  width: 20vw;
+}
+
+.NavBar {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 2rem;
+  width: 50vw;
+}
+
+.compreAgora {
+  width: 20vw;
+  text-align: right;
+}
+
+#botaoComprar {
+  height: 2rem;
+  background: transparent;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  border: solid 1px rgb(10, 70, 28);
+  border-radius: 5px;
+  padding: 0 1rem 0 1rem;
+  color: aliceblue;
+}
+
+#botaoComprar:hover {
+  background: rgb(14, 97, 39);
+}
+
+#botaoComprar:active {
+  background: rgb(10, 73, 29);
+}
+
+.title {
+  font-size: 2rem;
+  margin-top: auto;
+  text-align: center;
+}
+
+.subTitle {
+  margin-top: auto;
+  padding-top: 70px;
+  text-align: center;
+  max-width: 85%;
+  color: aliceblue;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 70vw;
+  height: 100vh;
+}
+
+#img_iphone {
+  content: url(./assets/iphone14_horizontal.png);
+  max-height: 65vh;
+  max-width: 90vw;
+  margin-top: auto;
+  transition: all .2s;
+}
+
+#logo {
+  content: url(./assets/logo.webp);
+  height: 35px;
+}
+
+#menuIcon {
+  content: url(./assets/hamburguer_menu.svg);
+}
+
+.mobileNavBar {
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  width: 100vw;
+}
+
+.mobileNavBar #links {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.mobileNavBar a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.mobileNavBar a.icon {
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 40px;
+  width: 40px;
+}
+
+.mobileNavBar a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.active {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: rgb(255, 255, 255);
+}
+
+@media (max-width: 765px) {
+  #img_iphone {
+    content: url(./assets/iphone14_vertical.png);
+    max-height: 50vh;
+  }
+
+  body {
+    background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgb(246, 70, 252) 100%);
+  }
+
+  .header {
+    width: 80%;
+  }
+
+  .compreAgora {
+    display: flex;
+    margin-top: auto;
+    width: 30vw;
+    justify-content: center;
+  }
+
+  #botaoComprar {
+    border: solid 1px rgb(142, 21, 146);
+    padding: 0 1rem 0 1rem;
+  }
+
+  #botaoComprar:hover {
+    background: rgb(149, 28, 206);
+  }
+
+  #botaoComprar:active {
+    background: rgb(82, 14, 114);
+  }
+}

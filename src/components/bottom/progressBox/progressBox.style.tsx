@@ -17,7 +17,7 @@ export const FillerWrapper = styled.div.attrs((props: { completed: string, bgCol
     border-radius: inherit;
     position: absolute;
     bottom: 0;
-    transition: all 0.5s;
+    transition: all 1.5s;
 `
 
 export const LabelWrapper = styled.div`

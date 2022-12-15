@@ -2,7 +2,7 @@ import { useState, Fragment } from 'react'
 import './App.css'
 import HomePage from "./components/homePage"
 import DataType from './interfaces/dataType'
-import RefreshButton from './components/refreshButton'
+import LandingPage from './components/landingPage'
 
 function App() {
 
@@ -17,9 +17,7 @@ function App() {
       />
       :
       <Fragment>
-        <h1>Bem Vindo</h1>
-        <RefreshButton
-          setData={setData} />
+        <LandingPage setData={setData}/>
       </Fragment>
   )
 }
