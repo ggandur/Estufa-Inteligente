@@ -1,7 +1,7 @@
 import axios from "axios";
 import DataType from "../../interfaces/dataType";
 
-const requestURL = "http://200.235.85.72/";
+const requestURL = "http://localhost:3000/main";
 
 const errorCallback = () => {
   return console.log("A Callback falhou e não obteve dados\nErro:");

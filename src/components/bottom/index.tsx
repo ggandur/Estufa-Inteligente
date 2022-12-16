@@ -15,7 +15,7 @@ function Bottom(props: BottomProps) {
                 completed={props.luminosityValue}
             />
             <Box
-                description={"Humidade"}
+                description={"Umidade"}
                 bgColor={"rgba(0, 68, 255, 0.9)"}
                 completed={props.humidityValue}
             />

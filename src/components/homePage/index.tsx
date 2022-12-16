@@ -12,7 +12,7 @@ type HomePageProps = {
 function HomePage(props: HomePageProps) {
   return (
     <HomePageWrapper>
-      <Title title={"Smart Plant"} setData={props.setData} />
+      <Title title={"PlantaGotchi"} setData={props.setData} />
       <TemperatureDisplay value={props.data.temperature} />
       <img
         src="src/assets/sunflowerGif.gif"
