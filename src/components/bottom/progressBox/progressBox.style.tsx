@@ -10,7 +10,7 @@ export const ContainerWrapper = styled.div`
 `
 
 export const FillerWrapper = styled.div.attrs((props: { completed: string, bgColor: string }) => props)`
-    height: ${(props) => props.completed};
+    height: ${(props) => `${props.completed}%`};
     min-height: 20%;
     width: 100%;
     background-color: ${(props) => props.bgColor};

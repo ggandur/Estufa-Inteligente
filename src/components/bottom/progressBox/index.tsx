@@ -9,7 +9,7 @@ function ProgressBox(props: ProgressBoxProps) {
     return (
         <ContainerWrapper>
             <LabelWrapper>
-                {props.completed}
+                {props.completed + '%'}
             </LabelWrapper>
             <FillerWrapper
                 completed={props.completed}

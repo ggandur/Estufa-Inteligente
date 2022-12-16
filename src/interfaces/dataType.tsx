@@ -1,9 +1,7 @@
 interface DataType {
-    main: {
-        temperature: string,
-        luminosityValue: string,
-        humidityValue: string
-    }
+  temperature: string;
+  luminosityValue: string;
+  humidityValue: string;
 }
 
-export default DataType
+export default DataType;
